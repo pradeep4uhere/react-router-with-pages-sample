@@ -5,70 +5,157 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta charset="utf-8">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <title>Pradeep Kumar Portfolio</title>
+	  <meta name="theme-color" content="#000000"/>
+	  <meta name="description" content="Portfolio site for Pradeep Kumar"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pradeep Kumar Technical- ReacJs, NodeJs & Laravel Developer">
+    <meta name="author" content="Pradeep Kumar|pradeep7384@gmail.com|www.pradeeptechnical.com">
+  
+    <meta property="og:title" content="PRADEEP KUMAR Software Developer"/>
+    <meta property="og:url" content="https://pradeeptechnical.com"/>
+    <meta property="og:image" content="https://pradeeptechnical.com/img/IMG_0853.JPG"/>
+    <meta property="og:image:width" content="125"/>
+    <meta property="og:image:height" content="125"/>
+    <meta property="og:description" content="Pradeep Kumar - Software Developer"/>
+    <meta property="og:site_name" content="Pradeep Kumar - Technical"/>
+    <meta name="atdlayout" content="article">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>React App</title>
-    <style>
-      body {
-  background-color: #fbfbfb;
+	  <link rel="manifest" href="site.webmanifest">
+	  <link rel="shortcut icon" type="x-icon" href="favicon.ico">
+	  <!-- Place favicon.ico in the root directory -->
+	  
+	  <!--  START ALL CSS  -->
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/animate.min.css">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/jquery.fancybox.css">
+	  <link rel="stylesheet" href="css/slicknav.css">
+	  <link rel="stylesheet" href="css/owl.carousel.min.css">
+	  <link rel="stylesheet" href="css/line-awesome.css">
+	  <link rel="stylesheet" href="css/porri-style.css">
+	  <link rel="stylesheet" href="css/porri-responsive.css">
+	  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900&display=swap" rel="stylesheet">
+	  <!--  END ALL CSS  -->
+	  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+	  <link href="assets/css/style.css" rel="stylesheet">
+	  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+      </style>
+	  <style>
+		body{
+	margin:0;
+	padding:0;
 }
-@media (min-width: 991.98px) {
-  main {
-    padding-left: 240px;
-  }
+/* .container{
+	width:90%
+	margin:10px auto;
+} */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	font-weight:bold;
+	color:#333;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
 }
 
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 58px 0 0; /* Height of navbar */
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 240px;
-  z-index: 600;
+.portfolio-menu ul li.active {
+ color: red;
+ font-weight:bold;
 }
 
-@media (max-width: 991.98px) {
-  .sidebar {
-    width: 100%;
-  }
+.portfolio-item{
+	/*width:100%;*/
 }
-.sidebar .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
 }
 
-    </style>
+
+	  </style>
+	  <style>
+  
+	      img.logo {
+              vertical-align:middle;
+            }
+            
+		.wid-section .task-card {
+			align-items: center;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px #e0e0e0;
+			color: gray;
+			display: flex;
+			margin-bottom: 10px;
+			padding: 25px 15px;
+			transition-duration: .2s;
+		}
+
+		@media screen and (min-width: 993px){
+			.wid-section .task-card {
+			height: 100px;
+		}
+       
+		.text-left {
+			text-align: left;
+		}
+
+		.row {
+			--bs-gutter-x: 1.5rem;
+			--bs-gutter-y: 0;
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: calc(var(--bs-gutter-x)*-.5);
+			margin-right: calc(var(--bs-gutter-x)*-.5);
+			margin-top: calc(var(--bs-gutter-y)*-1);
+		}
+
+		.wid-section .task-card .check-icon {
+			margin-left: 10px;
+			margin-right: 20px;
+		}
+		#wid {
+			padding-top: 0px;
+		}
+
+
+		.task-card.text-left:hover {
+		background-color: #f21e4e;
+		color: antiquewhite;
+	}
+}
+</style>
+
+
+
+	  <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4593CYS08C"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-4593CYS08C');
+        </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -84,6 +171,54 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!--Bootstarp Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+
+    	<!-- START ALL SJ/SCRIPT -->
+		<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>		  	  				 		 
+		<script src="js/bootstrap.min.js"></script> 	  			
+		<script src="js/scrollreveal.min.js"></script>
+		<script src="js/porri-main.js"></script>			
+		<script src="js/wow.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>			
+		<script src="js/fancyBox v2.1.5.js"></script>
+		<script src="js/jquery.parallax-1.1.3.js"></script>	
+		<script src="js/jquery.barfiller.js"></script>			
+		<script src="js/jquery.counterup.min.js"></script> 			
+		<script src="js/jquery.ripples-min.js"></script> 			
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/particles.min.js"></script>
+		<script src="js/tilt.jquery.min.js"></script> 
+		<script src="js/jquery.slicknav.min.js"></script> 			
+		<script src="js/typewritter.js"></script> 
+		<script src="js/owl.carousel.min.js"></script> 
+		<script src="js/jquery.scrollUp.min.js"></script>
+		<script src="js/plugins.js"></script>
+
+		<!-- Vendor JS Files -->
+	  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	  <!-- Template Main JS File -->
+	  <script src="assets/js/main.js"></script>
+
+
+		<!-- END ALL SJ/SCRIPT -->  
+<script>
+$('.portfolio-item').isotope({
+ 	itemSelector: '.item',
+ 	layoutMode: 'fitRows'
+ });
+$('.portfolio-menu ul li').click(function(){
+	$('.portfolio-menu ul li').removeClass('active');
+	$(this).addClass('active');
+	
+	var selector = $(this).attr('data-filter');
+	$('.portfolio-item').isotope({
+		filter:selector
+	});
+	return  false;
+	});
+
+</script>
   </body>
 </html>
